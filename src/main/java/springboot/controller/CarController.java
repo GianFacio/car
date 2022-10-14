@@ -30,7 +30,7 @@ public class CarController {
 	@GetMapping("/cars/new")
 	public String createCarForm(Model model) {
 		
-		// create student object to hold student form data
+		// create student object to hold car form data
 		Car car = new Car();
 		model.addAttribute("car", car);
 		return "create_car";
@@ -54,7 +54,7 @@ public class CarController {
 			@ModelAttribute("car") Car car,
 			Model model) {
 		
-		// get student from database by id
+		// get car from database by id
 		Car existingCar = carService.getCarById(id);
 		existingCar.setId(id);
 		existingCar.setMake(car.getMake());
@@ -67,7 +67,7 @@ public class CarController {
 		return "redirect:/cars";		
 	}
 	
-	// handler method to handle delete student request
+	// handler method to handle delete car request
 	
 	@GetMapping("/cars/{id}")
 	public String deleteCar(@PathVariable Long id) {
