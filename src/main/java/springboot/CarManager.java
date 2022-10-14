@@ -21,18 +21,18 @@ public class CarManager implements CommandLineRunner{
 	
 	@Autowired
     private JdbcTemplate jdbcTemplate;
+
 	
 	@Override
 	public void run(String... args) throws Exception 
 	{
-		String sql = "INSERT INTO car (id, make, model, color, year) VALUES (?, ?, ?, ?, ?)";
+		//String sql = "INSERT INTO car (id, make, model, color, year) VALUES (?, ?, ?, ?, ?)";
         
-        int result = jdbcTemplate.update(sql, "2","Mercedes Benz", "C300", "Red", "2023");
+        //int result = jdbcTemplate.update(sql, "4","Mercedes Benz", "C300", "Red", "2023");
          
-        if (result > 0) {
-            System.out.println("A new row has been inserted.");
-        }
-
+        //if (result > 0) {
+            //System.out.println("A new row has been inserted.");
+        //}
 	}
 
 }

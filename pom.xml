@@ -11,10 +11,10 @@
 	<groupId>springboot</groupId>
 	<artifactId>car-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-management-system</name>
+	<name>Car-Manager</name>
 	<description>Car Manager</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

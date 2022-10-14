@@ -60,6 +60,7 @@ public class CarController {
 		existingCar.setMake(car.getMake());
 		existingCar.setModel(car.getModel());
 		existingCar.setColor(car.getColor());
+		existingCar.setYear(car.getYear());
 		
 		// save updated student object
 		carService.updateCar(existingCar);
