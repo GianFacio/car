@@ -30,7 +30,7 @@ public class CarController {
 	@GetMapping("/cars/new")
 	public String createCarForm(Model model) {
 		
-		// create student object to hold car form data
+		// create car object to hold car form data
 		Car car = new Car();
 		model.addAttribute("car", car);
 		return "create_car";
@@ -62,7 +62,7 @@ public class CarController {
 		existingCar.setColor(car.getColor());
 		existingCar.setYear(car.getYear());
 		
-		// save updated student object
+		// save updated car object
 		carService.updateCar(existingCar);
 		return "redirect:/cars";		
 	}
