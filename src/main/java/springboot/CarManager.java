@@ -17,7 +17,7 @@ public class CarManager implements CommandLineRunner{
 	}
 
 	@Autowired
-	private CarRepository studentRepository;
+	private CarRepository carRepository;
 	
 	@Autowired
     private JdbcTemplate jdbcTemplate;
