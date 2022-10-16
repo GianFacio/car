@@ -20,7 +20,7 @@ public class CarController {
 		this.carService = carService;
 	}
 	
-	// handler method to handle list students and return mode and view
+	// handler method to handle list car and return mode and view
 	@GetMapping("/cars")
 	public String listCars(Model model) {
 		model.addAttribute("cars", carService.getAllCars());
