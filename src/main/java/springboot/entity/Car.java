@@ -63,16 +63,6 @@ public class Car {
 		this.color = color;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public Integer getYear() {
 		return year;
 	}
